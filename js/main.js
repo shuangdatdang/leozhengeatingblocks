@@ -4,13 +4,10 @@
 canvasSize(800, 600);
 
 // Main Draw Loop
-requestAnimationFrame(draw);
+window.addEventListener("load", draw);
 
 function draw() {
-  background("skyblue");
-
-  fill("white");
-  rect(50, 50, 200, 100, "fill");
+  console.log("hi");
 
   requestAnimationFrame(draw);
 }
